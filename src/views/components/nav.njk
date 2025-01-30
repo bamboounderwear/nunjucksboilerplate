@@ -1,7 +1,47 @@
-<nav>
-    <ul class="flex space-x-4">
+<div class="relative flex flex-col md:flex-row items-center justify-between gap-4">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-2">
+        <svg class="w-8 h-8 text-blue-600" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v12h16V6H4zm2 3h12v2H6V9zm0 4h8v2H6v-2z"/>
+        </svg>
+        <span class="text-xl font-bold text-gray-800">PhotoJourney</span>
+    </a>
+
+    <!-- Mobile menu button -->
+    <button id="mobile-menu-button" class="md:hidden p-2 text-gray-600 hover:text-gray-800">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+    </button>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:block">
+        <ul class="flex space-x-6">
+            {% for item in nav %}
+            <li><a href="{{ item.url }}" class="text-blue-600 hover:text-blue-800 transition-colors">{{ item.label }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+</div>
+
+<!-- Mobile Navigation -->
+<nav id="mobile-menu" class="hidden w-full mt-4 md:hidden">
+    <ul class="space-y-3">
         {% for item in nav %}
-        <li><a href="{{ item.url }}" class="text-blue-600 hover:text-blue-800 transition-colors">{{ item.label }}</a></li>
+        <li><a href="{{ item.url }}" class="block text-blue-600 hover:text-blue-800 transition-colors">{{ item.label }}</a></li>
         {% endfor %}
     </ul>
 </nav>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    });
+</script>
