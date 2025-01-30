@@ -1,7 +1,7 @@
 <nav>
-    <ul>
+    <ul class="flex space-x-4">
         {% for item in nav %}
-        <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+        <li><a href="{{ item.url }}" class="text-blue-600 hover:text-blue-800 transition-colors">{{ item.label }}</a></li>
         {% endfor %}
     </ul>
 </nav>

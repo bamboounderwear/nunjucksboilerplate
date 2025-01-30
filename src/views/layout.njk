@@ -6,12 +6,12 @@
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
-    <header>
-        <h1>{{ title }}</h1>
+<body class="bg-gray-100 min-h-screen">
+    <header class="bg-white shadow-md p-4 mb-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">{{ title }}</h1>
         {% include "components/nav.njk" %}
     </header>
-    <main>
+    <main class="container mx-auto px-4">
         {% block content %}{% endblock %}
     </main>
 </body>
