@@ -1,4 +1,12 @@
 {% extends 'layout.njk' %}
+{% from "components/image-text.njk" import imageText %}
+
 {% block content %}
-    <p>{{ content }}</p>
+    <p class="mb-12">{{ content }}</p>
+    
+    {% for section in sections %}
+        <div class="mb-16">
+            {{ imageText(section) }}
+        </div>
+    {% endfor %}
 {% endblock %}

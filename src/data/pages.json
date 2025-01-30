@@ -5,8 +5,30 @@
       "template": "home",
       "content": "Welcome to our site!",
       "nav": [
-          { "label": "Home", "url": "/index.html" },
-          { "label": "About", "url": "/about.html" }
+          { "label": "Home", "url": "index.html" },
+          { "label": "About", "url": "about.html" }
+      ],
+      "sections": [
+          {
+              "title": "Beautiful Landscapes",
+              "description": "Discover breathtaking views and natural wonders from around the world. Our curated collection of landscape photography will transport you to the most stunning locations on Earth.",
+              "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800",
+              "imageAlt": "Beautiful mountain landscape with a lake",
+              "link": {
+                  "text": "Explore More",
+                  "url": "gallery"
+              }
+          },
+          {
+              "title": "Urban Architecture",
+              "description": "Experience the magnificence of modern urban architecture. From towering skyscrapers to historic buildings, witness the evolution of human engineering and design.",
+              "image": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800",
+              "imageAlt": "Modern city architecture",
+              "link": {
+                  "text": "View Collection",
+                  "url": "architecture"
+              }
+          }
       ]
   },
   {
@@ -15,8 +37,8 @@
       "template": "about",
       "content": "About us page content.",
       "nav": [
-          { "label": "Home", "url": "/index.html" },
-          { "label": "About", "url": "/about.html" }
+          { "label": "Home", "url": "index.html" },
+          { "label": "About", "url": "about.html" }
       ]
   }
 ]
