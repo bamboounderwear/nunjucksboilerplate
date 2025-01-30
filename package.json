@@ -1,0 +1,18 @@
+{
+  "name": "nunjucks-boilerplate",
+  "version": "1.0.0",
+  "description": "A production-ready vanilla HTML, CSS, and JS boilerplate using Nunjucks.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "start": "node build.js && npx serve dist"
+  },
+  "dependencies": {
+    "nunjucks": "^3.2.3"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  },
+  "author": "ChatGPT",
+  "license": "MIT"
+}

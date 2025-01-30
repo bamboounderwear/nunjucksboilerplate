@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Home",
+    "slug": "index",
+    "template": "home",
+    "content": "Welcome to our site!"
+  },
+  {
+    "title": "About",
+    "slug": "about",
+    "template": "about",
+    "content": "About us page content."
+  }
+]
