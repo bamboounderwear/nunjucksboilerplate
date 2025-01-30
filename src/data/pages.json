@@ -10,5 +10,11 @@
     "slug": "about",
     "template": "about",
     "content": "About us page content."
+  },
+  {
+    "title": "Contact",
+    "slug": "contact",
+    "template": "about",
+    "content": "Contact us today for a great price!"
   }
 ]
