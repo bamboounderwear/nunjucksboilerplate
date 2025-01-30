@@ -1,20 +1,22 @@
 [
   {
-    "title": "Home",
-    "slug": "index",
-    "template": "home",
-    "content": "Welcome to our site!"
+      "title": "Home",
+      "slug": "index",
+      "template": "home",
+      "content": "Welcome to our site!",
+      "nav": [
+          { "label": "Home", "url": "/index.html" },
+          { "label": "About", "url": "/about.html" }
+      ]
   },
   {
-    "title": "About",
-    "slug": "about",
-    "template": "about",
-    "content": "About us page content."
-  },
-  {
-    "title": "Contact",
-    "slug": "contact",
-    "template": "about",
-    "content": "Contact us today for a great price!"
+      "title": "About",
+      "slug": "about",
+      "template": "about",
+      "content": "About us page content.",
+      "nav": [
+          { "label": "Home", "url": "/index.html" },
+          { "label": "About", "url": "/about.html" }
+      ]
   }
 ]
