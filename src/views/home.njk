@@ -1,12 +1,17 @@
 {% extends 'layout.njk' %}
 {% from "components/image-text.njk" import imageText %}
+{% from "components/rich-text.njk" import richText %}
 
 {% block content %}
     <p class="mb-12">{{ content }}</p>
     
     {% for section in sections %}
         <div class="mb-16">
-            {{ imageText(section) }}
+            {% if section.type == 'image-text' %}
+                {{ imageText(section) }}
+            {% elif section.type == 'rich-text' %}
+                {{ richText(section) }}
+            {% endif %}
         </div>
     {% endfor %}
 {% endblock %}

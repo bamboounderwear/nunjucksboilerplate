@@ -1,0 +1,25 @@
+{% macro richText(data) %}
+<div class="prose prose-lg max-w-none">
+    {% for block in data.blocks %}
+        {% if block.type == 'heading' %}
+            <h{{ block.level }} class="text-gray-800 font-bold">{{ block.content }}</h{{ block.level }}>
+        {% elif block.type == 'paragraph' %}
+            <p class="text-gray-600">{{ block.content }}</p>
+        {% elif block.type == 'list' %}
+            {% if block.style == 'ordered' %}
+                <ol class="list-decimal list-inside">
+            {% else %}
+                <ul class="list-disc list-inside">
+            {% endif %}
+            {% for item in block.items %}
+                <li class="text-gray-600">{{ item }}</li>
+            {% endfor %}
+            {% if block.style == 'ordered' %}
+                </ol>
+            {% else %}
+                </ul>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</div>
+{% endmacro %}

@@ -10,6 +10,7 @@
       ],
       "sections": [
           {
+              "type": "image-text",
               "title": "Beautiful Landscapes",
               "description": "Discover breathtaking views and natural wonders from around the world. Our curated collection of landscape photography will transport you to the most stunning locations on Earth.",
               "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800",
@@ -20,6 +21,30 @@
               }
           },
           {
+              "type": "rich-text",
+              "blocks": [
+                  {
+                      "type": "heading",
+                      "level": 2,
+                      "content": "Our Mission"
+                  },
+                  {
+                      "type": "paragraph",
+                      "content": "We strive to capture and share the world's most breathtaking moments through our lens."
+                  },
+                  {
+                      "type": "list",
+                      "style": "unordered",
+                      "items": [
+                          "Document natural wonders",
+                          "Showcase architectural marvels",
+                          "Inspire through visual storytelling"
+                      ]
+                  }
+              ]
+          },
+          {
+              "type": "image-text",
               "title": "Urban Architecture",
               "description": "Experience the magnificence of modern urban architecture. From towering skyscrapers to historic buildings, witness the evolution of human engineering and design.",
               "image": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800",
@@ -39,6 +64,43 @@
       "nav": [
           { "label": "Home", "url": "index.html" },
           { "label": "About", "url": "about.html" }
+      ],
+      "sections": [
+          {
+              "type": "image-text",
+              "title": "Our Story",
+              "description": "Learn about our journey and what makes us unique in the world of photography and architectural documentation.",
+              "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800",
+              "imageAlt": "Team working together",
+              "link": {
+                  "text": "Meet the Team",
+                  "url": "team"
+              }
+          },
+          {
+              "type": "rich-text",
+              "blocks": [
+                  {
+                      "type": "heading",
+                      "level": 2,
+                      "content": "Our Values"
+                  },
+                  {
+                      "type": "paragraph",
+                      "content": "At our core, we believe in the power of visual storytelling to inspire and connect people across the globe."
+                  },
+                  {
+                      "type": "list",
+                      "style": "ordered",
+                      "items": [
+                          "Excellence in every shot",
+                          "Respect for nature and architecture",
+                          "Commitment to authenticity",
+                          "Innovation in visual storytelling"
+                      ]
+                  }
+              ]
+          }
       ]
   }
 ]
